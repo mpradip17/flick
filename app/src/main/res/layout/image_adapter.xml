@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:vikram="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+                name="data"
+                type="com.kotlintest.app.model.ImageSearchModel.Photos.Photo" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            vikram:cardBackgroundColor="@color/White"
+            android:layout_margin="@dimen/_5sdp"
+            vikram:cardCornerRadius="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="@dimen/_120sdp"
+                ImageUrl="@{data}"
+                android:layout_height="@dimen/_120sdp"/>
+    </androidx.cardview.widget.CardView>
+</layout>
